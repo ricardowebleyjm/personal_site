@@ -14,5 +14,5 @@ exec gunicorn personal_site.wsgi:application \
     --bind=0.0.0.0:9090 \
     # --log-level=info \
     # --access-logfile=$PWD/accesslog.log \
-    # --workers=4 \
+    --workers=4 \
     # --error-logfile=$PWD/errorlog.log \
