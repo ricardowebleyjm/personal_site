@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  app:
+    container_name: django_container
+    restart: always
+    build: .
+    ports:
+      - 9090:9090
+    volumes:
+      - .:/code
