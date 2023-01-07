@@ -12,5 +12,6 @@ COPY . ./code
 
 RUN pip install -r requirements.txt
 
+
 EXPOSE 9090
 ENTRYPOINT ["sh", "entrypoint.sh"]

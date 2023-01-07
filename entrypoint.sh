@@ -4,6 +4,7 @@
 # python manage.py migrate --noinput
 chown -R 1000:1000 "/root/.npm"
 python manage.py collectstatic --noinput --clear
+python manage.py tailwind install
 python manage.py tailwind build
 
 
